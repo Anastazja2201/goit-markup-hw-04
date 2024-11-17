@@ -150,9 +150,7 @@ color: #404bbf;
 /* #endregion */
 
 /* #region mainpage */
-.container.main-container {
-    max-width: 1440px;
-}
+
 .main {
     background-image: linear-gradient(
         to bottom,
@@ -160,9 +158,11 @@ color: #404bbf;
         rgba(46, 47, 66, 0.7)),
      url(../images/background-img.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
    background-size: cover;
     padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .title {
@@ -194,6 +194,7 @@ color: #404bbf;
                 color: #fff;
                 border: none;
                 border-radius: 4px;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -203,6 +204,7 @@ color: #404bbf;
 /* #endregion */
 
 /* #region opportunities */
+
 
 .opportunities-list {
     display: flex;
@@ -250,6 +252,7 @@ color: #404bbf;
 
 .opportunities-items {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 8px;
 }
 /* #endregion */
 
@@ -331,9 +334,11 @@ display: flex;
         background-color: #4d5ae5;
             justify-content: center;
             align-items: center;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover{
-color: #404BBF;
+.social-link:hover,
+.social-link:focus {
+background-color: #404BBF;
 }
 
 /* #endregion */
@@ -365,11 +370,12 @@ column-gap: 24px;
         background: #fff;
         border-radius: 0 0 4px 4px;
         width: calc((100% - 48px) / 3);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.7);
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-name {
@@ -503,7 +509,11 @@ display: inline-block;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .social-link-footer:hover {
+ .social-link-footer:hover,
+ .social-link-footer:focus {
      background-color: rgb(49, 208, 170);
+ }
+ .team-social {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  /* #endregion */
