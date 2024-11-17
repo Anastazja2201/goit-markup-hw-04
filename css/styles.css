@@ -231,6 +231,7 @@ color: #404bbf;
     border: 1px solid rgb(142, 143, 153);
         border-radius: 4px;
         background: rgb(244, 244, 253);
+        margin-bottom: 8px;
 }
 .opportunities-subtitle {
     font-weight: 500;
@@ -252,8 +253,8 @@ color: #404bbf;
 
 .opportunities-items {
     width: calc((100% - 72px) / 4);
-    margin-bottom: 8px;
 }
+
 /* #endregion */
 
 /* #region team */
@@ -312,8 +313,7 @@ color: #404bbf;
 display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px
-    ;
+    gap: 24px;
 }
 
 .team-social {
@@ -370,7 +370,7 @@ column-gap: 24px;
         background: #fff;
         border-radius: 0 0 4px 4px;
         width: calc((100% - 48px) / 3);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -506,7 +506,7 @@ display: inline-block;
      background-color: #4d5ae5;
      justify-content: center;
      align-items: center;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .social-link-footer:hover,
